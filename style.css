@@ -1,5 +1,5 @@
 body {
-    width: 1440px;
+    width: 1900px;
 }
 
 /* Navbar Styles */
@@ -26,10 +26,7 @@ body {
 @media screen and (max-width: 576px) {
     
     .navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
+        flex-wrap: wrap;
         margin-left: 0;
         padding-left: 2rem;
         
@@ -39,15 +36,25 @@ body {
     visibility: hidden;
     }
 
+    .link-4 {
+        margin: 0;
+    }
+
 }
 
 
 /* Banner Styles */
 
 .banner {
+    width: 100%;
     margin: 0 9.375rem;
     display: grid;
     grid-template-columns: 570px 570px;
+    gap: 490px;
+}
+
+.hero {
+    order: 1;
 }
 
 .hero h1 {
@@ -71,4 +78,101 @@ body {
 .hero-img {
     width: 570px;
     height: 355px;
+    order: 2;
+}
+
+@media  screen and (max-width: 576px) {
+    
+    .banner {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 20px;
+        gap: 0;
+    }
+
+    .hero {
+        order: 2;
+        width: 100%;
+    }
+    .hero-img {
+        order: 1;
+        width: 100%;
+    }
+}
+
+/* Plants Section Styles */
+
+.plants {
+    text-align: center;
+    margin: 7rem 24.375rem;
+}
+
+.plants h2 {
+    font-size: 4.125rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.plants span {
+    color: #E95A08;
+    margin-right: 1rem;
+}
+
+.plants p {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 0;
+    margin-bottom: 4.125rem;
+}
+
+.plants-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 4rem;
+}
+
+.plant-card img {
+    margin-bottom: 1.8rem;
+}
+
+.card-title {
+    font-size: 1.725rem;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.number {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1.75rem;
+}
+
+.plant-card a {
+    text-decoration: none;
+    margin-top: 0;
+    color: #ffffff;
+    background-color: #E95A08;
+    padding: 1.5rem 5rem;
+}
+
+.plant-card a:hover {
+    background-color: rgb(109, 207, 207);
+}
+
+
+@media screen and (max-width: 576px) {
+    
+    .plants {
+        margin: 0;
+        text-align: center;
+    }
+
+
+    .plants-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
