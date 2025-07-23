@@ -1,0 +1,74 @@
+body {
+    width: 1440px;
+}
+
+/* Navbar Styles */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.875rem 9.4rem 7rem 9.4rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin-left: 4rem;
+    color: #333;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.navbar span {
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+    
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: 0;
+        padding-left: 2rem;
+        
+    }
+
+    .link-1, .link-2, .link-3 {
+    visibility: hidden;
+    }
+
+}
+
+
+/* Banner Styles */
+
+.banner {
+    margin: 0 9.375rem;
+    display: grid;
+    grid-template-columns: 570px 570px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 13px;
+}
+
+.hero span {
+    color: #E95A08;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 0;
+}
+
+.hero-img {
+    width: 570px;
+    height: 355px;
+}
