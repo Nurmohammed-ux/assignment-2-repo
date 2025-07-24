@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1.875rem 9.4rem 7rem 9.4rem;
+    margin: 1.875rem 24.375rem 7rem 24.375rem;
 }
 
 .navbar a {
@@ -51,10 +51,10 @@ body {
 
 .banner {
     width: 100%;
-    margin: 0 9.375rem;
+    margin: 0 24.375rem;
     display: grid;
     grid-template-columns: 570px 570px;
-    gap: 490px;
+    
 }
 
 .hero {
@@ -189,8 +189,8 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 12rem;
-    margin-left: 9.375rem;
-    margin-right: 9.375rem;
+    margin-left: 24.375rem;
+    margin-right: 24.375rem;
     margin-bottom: 7rem;
 }
 
@@ -219,4 +219,144 @@ body {
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: 1rem;
+}
+
+
+/* Latest Section Styles */
+
+.latest {
+    margin: 0 24.375rem 7rem 24.375rem;
+    text-align: center;
+}
+
+.latest h2 {
+    font-size: 4.125rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.latest span {
+    color: #E95A08;
+}
+
+.latest p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 4rem;
+}
+
+.img-container {
+    display: flex;
+    flex: 1 2;
+    gap: 20px;
+}
+
+.img-1 {
+    background: linear-gradient(rgba(7, 2, 17, 0.3), rgba(7, 2, 17, 0.3)), url(./assets/deal-bloom.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    height: 200px;
+    width: 367px;
+    border-radius: 14px;
+}
+
+.img-1 h4 {
+    padding-top: 64px;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.img-1 a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
+.img-2 {
+    background: linear-gradient(rgba(7, 2, 17, 0.3), rgba(7, 2, 17, 0.3)), url(./assets/deal-ana.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    height: 200px;
+    width: 367px;
+    border-radius: 14px;
+}
+
+.img-2 h4 {
+    padding-top: 64px;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.img-2 a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
+.img-container-2 {
+    background: linear-gradient(rgba(7, 2, 17, 0.3), rgba(7, 2, 17, 0.3)), url(./assets/deal-zabo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff;
+    width: 753px;
+    height: 425px;
+    margin-top: 32px;
+    border-radius: 22px;
+}
+
+.img-container-2 h4 {
+    font-size: 2.5rem;
+    margin: 172px 128px 8px 128px;
+}
+
+.img-container-2 a {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+
+/* Join Section Styles */
+
+.join-container {
+    text-align: center;
+    margin: 0 15.375rem 7rem 15.375rem;
+    background: url(./assets/news-letter-bg.png);
+    width: 1440px;
+    height: 530px;
+}
+
+.join-container h2 {
+    font-size: 3.125rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding-top: 10rem;
+    margin-bottom: 1.75rem;
+}
+
+.join-container input {
+    height: 3.125rem;
+    width: 40rem;
+    padding: 15.5px 0 15.5px 2rem;
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+.join-container a {
+    background-color: #E95A08;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 33px 3.5rem;
+    margin-left: -1rem;
+}
+
+.join-container a:hover {
+    background-color: rgb(109, 207, 207);
+    transition: background-color 0.5s ease-in;
 }
