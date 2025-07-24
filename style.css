@@ -9,11 +9,18 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 1.875rem 24.375rem 7rem 24.375rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
+.link {
+    display: flex;
+    gap: 3.125rem;
+} 
 
 .navbar a {
     text-decoration: none;
-    margin-left: 4rem;
     color: #333;
     font-size: 1.25rem;
     font-weight: 700;
@@ -23,25 +30,37 @@ body {
     margin-right: 1rem;
 }
 
-.link span {
+
+.link-2 span, .link-3 span {
     color: rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 576px) {
     
     .navbar {
-        flex-wrap: wrap;
-        margin-left: 0;
-        padding-left: 2rem;
-        
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 0;
+        padding: 15px;
     }
 
     .link-1, .link-2, .link-3 {
     display: none;
     }
 
+    .link {
+        flex: 1;
+        justify-content: flex-start;
+        margin-left: 10rem;
+    }
+
+    .logo {
+        flex: 0 0 auto;
+    }
+
     .link-4 {
-        margin: 0;
+        font-size: 14px;
+        white-space: nowrap;
     }
 
 }
@@ -91,7 +110,6 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         margin: 0;
-        padding: 20px;
         gap: 0;
     }
 
@@ -101,7 +119,7 @@ body {
     }
     .hero-img {
         order: 1;
-        width: 100%;
+        width: 50%;
     }
 }
 
@@ -172,12 +190,17 @@ body {
     
     .plants {
         margin: 0;
-        text-align: center;
+        text-align: left;
     }
 
 
     .plants-card {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 270px 270px;
+        gap: 10;
+    }
+
+    .plant-card {
+        text-align: left;
     }
 }
 
@@ -206,6 +229,8 @@ body {
     background: transparent;
     margin-left: 350px;
     transform: translateY(-110px);
+    transform-origin: center center;
+    animation: spin 3s linear 0.1s infinite forwards;
 }
 
 .flower-text h2 {
@@ -219,6 +244,33 @@ body {
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 576px) {
+    
+    .sample-flower-image {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: -950px;
+        padding: 0;
+    }
+
+    .flower-image img{
+        margin-left: 0;
+        display: none;
+    }
+}
+
+
+@keyframes spin {
+    
+    from {
+        transform: translateY(-110px) rotate(0);
+    }
+    to {
+        transform: translateY(-110px) rotate(360deg);
+    }
 }
 
 
@@ -324,7 +376,7 @@ body {
 
 .join-container {
     text-align: center;
-    margin: 0 15.375rem 7rem 15.375rem;
+    margin: 0 15.375rem 0 15.375rem;
     background: url(./assets/news-letter-bg.png);
     width: 1440px;
     height: 530px;
@@ -359,4 +411,36 @@ body {
 .join-container a:hover {
     background-color: rgb(109, 207, 207);
     transition: background-color 0.5s ease-in;
+}
+
+
+/* Footer Styles */
+
+footer {
+    display: flex;
+    margin: 0 15.375rem;
+    gap: 8rem;
+    padding: 3.125rem 10rem;
+}
+
+.footer-logo p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-home {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-features {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-icon img {
+    margin-right: 1.5rem;
 }
