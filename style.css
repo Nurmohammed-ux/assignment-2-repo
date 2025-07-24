@@ -23,6 +23,10 @@ body {
     margin-right: 1rem;
 }
 
+.link span {
+    color: rgba(0, 0, 0, 0.5);
+}
+
 @media screen and (max-width: 576px) {
     
     .navbar {
@@ -33,7 +37,7 @@ body {
     }
 
     .link-1, .link-2, .link-3 {
-    visibility: hidden;
+    display: none;
     }
 
     .link-4 {
@@ -175,4 +179,44 @@ body {
     .plants-card {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+
+/* Flower Love Section */
+
+.sample-flower-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12rem;
+    margin-left: 9.375rem;
+    margin-right: 9.375rem;
+    margin-bottom: 7rem;
+}
+
+.flower-image {
+    background: url(./assets/flower-store.png);
+    width: 540px;
+    height: 597px;
+}
+
+.flower-image img {
+    height: 286px;
+    width: 286px;
+    background: transparent;
+    margin-left: 350px;
+    transform: translateY(-110px);
+}
+
+.flower-text h2 {
+    font-size: 4.125rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.point li {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
 }
